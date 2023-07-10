@@ -2,7 +2,7 @@ import openai
 import time
 from flask import Flask, render_template, request
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 
 app = Flask(__name__)
