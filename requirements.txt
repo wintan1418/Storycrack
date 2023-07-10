@@ -23,7 +23,6 @@ multidict==6.0.4
 netifaces==0.11.0
 oauthlib==3.2.0
 openai==0.27.8
-pycairo==1.24.0
 
 python-apt==2.4.0+ubuntu1
 PyYAML==5.4.1
