@@ -2,7 +2,7 @@ import openai
 import time
 from flask import Flask, render_template, request
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 
 app = Flask(__name__)
@@ -35,8 +35,8 @@ def generate_funny_story(story):
 def home():
     if request.method == 'POST':
         topic = request.form['topic']
-        retry_attempts = 3
-        timeout = 10
+        retry_attempts = 50
+        timeout = 10000
         original_story = None
         funny_story = None
 
@@ -50,7 +50,7 @@ def home():
                 time.sleep(timeout)
 
         if original_story:
-            retry_attempts = 3
+            retry_attempts = 50
 
             while retry_attempts > 0:
                 try:
