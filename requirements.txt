@@ -25,5 +25,4 @@ oauthlib==3.2.0
 openai==0.27.8
 
 
-ubuntu-advantage-tools==8001
 
