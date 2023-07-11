@@ -1,8 +1,9 @@
+import os
 import openai
 import time
 from flask import Flask, render_template, request
 
-openai.api_key = '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'
+openai.api_key = os.environ.get('OPENAI_API_KEY')
 
 app = Flask(__name__)
 
